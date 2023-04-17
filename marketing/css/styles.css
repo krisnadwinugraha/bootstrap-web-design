@@ -13,21 +13,21 @@ nav {
   font-weight: bolder;
 }
 
+img {
+  position: relative;
+}
+
 .hero::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; 
+  height: 100%;
   background: url("../img/desk.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-}
-
-img{
-  position:relative;
 }
 
 .hero {
@@ -37,9 +37,11 @@ img{
 }
 
 .hero-content {
-  position: relative;
-  margin-top: 20%;
-  padding : 2em;  
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .hero-content h1 {
@@ -50,7 +52,7 @@ img{
   line-height: 44px;
 }
 
-.hero-content p{
+.hero-content p {
   color: #555555;
   font-family: sans-serif;
   font-size: 18px;
@@ -64,18 +66,18 @@ img{
   font-weight: bolder;
   line-height: 35px;
 }
- 
+
 .social {
-  margin-top: 5%;
-  top:0;
   position: relative;
+  width: 100%;
+  height: 100vh;
   background-color: #ffffff;
 }
 
-.social-content{
+.social-content {
   position: relative;
-  margin-top: 4em; 
-  margin-bottom: 4em;  
+  margin-top: 4em;
+  margin-bottom: 4em;
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -96,7 +98,7 @@ img{
   line-height: 28px;
 }
 
-.social-content p{
+.social-content p {
   color: #555555;
   font-family: sans-serif;
   font-size: 18px;
@@ -109,7 +111,7 @@ img{
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; 
+  height: 100%;
   background: url("../img/social.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -117,19 +119,19 @@ img{
 }
 
 .why {
-  margin-top : 5%;
+  margin-top: 5%;
   position: relative;
   width: 100%;
   height: 100vh;
   background-color: #ffffff;
 }
 
-.why-content{
-  position: relative;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 5%;
-  margin-top: 20%;
+.why-content {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
 }
 
 .why-content h2 {
@@ -140,37 +142,37 @@ img{
   line-height: 44px;
 }
 
-.why-content p{
+.why-content p {
   color: #555555;
   font-family: sans-serif;
   font-size: 18px;
   max-width: 50ch;
 }
 
-
-.why-content .container-fluid{
+.why-content .container-fluid {
   background-color: #ffffff;
   position: relative;
   border-radius: 1em;
 }
 
-.why-content img{
-  border : 2px;
+.why-content img {
+  border: 2px;
   border-style: solid;
   border-radius: 2em;
 }
 
 .service {
-  margin-top : 10%;
+  margin-top: 10%;
   margin-left: 5%;
   margin-right: 5%;
-  top:0; 
+  top: 0;
+  height: 100vh;
   position: relative;
   background-color: #ffffff;
   width: 90%;
 }
 
-.service-content{
+.service-content {
   position: relative;
   margin-left: 5%;
   margin-right: 5%;
@@ -193,7 +195,7 @@ img{
   line-height: 28px;
 }
 
-.service-content p{
+.service-content p {
   color: #555555;
   font-family: sans-serif;
   font-size: 18px;
@@ -206,7 +208,7 @@ img{
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; 
+  height: 100%;
   background: url("../img/office.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -215,7 +217,7 @@ img{
 
 .testimonial {
   background-color: rgb(233, 233, 233);
-  margin-top: 10%;  
+  margin-top: 10%;
   position: relative;
   width: 100%;
   height: 100vh;
@@ -224,7 +226,7 @@ img{
 
 .testimonial-content {
   position: relative;
-  padding : 2em;
+  padding: 2em;
 }
 
 .testimonial-content h2 {
@@ -243,13 +245,12 @@ img{
   line-height: 25px;
 }
 
-.testimonial-content p{
+.testimonial-content p {
   color: #000000;
   font-family: sans-serif;
   font-size: 18px;
   max-width: 50ch;
 }
-
 
 .footer {
   position: relative;
@@ -278,7 +279,7 @@ img{
   font-weight: bold;
   line-height: 29px;
 }
-  
+
 .footer-content p {
   color: #e6e3e3;
   font-family: sans-serif;
@@ -286,7 +287,7 @@ img{
   line-height: 18px;
   max-width: 55ch;
 }
-  
+
 .footer-content a {
   color: #e6e3e3;
   font-family: sans-serif;
@@ -299,15 +300,14 @@ text {
   font-size: 16px;
 }
 
-@media screen and (max-width: 450px ) { 
+@media screen and (max-width: 450px) {
   .hero-content {
-  margin-top: 50%;
+    margin-top: 50%;
   }
 }
 
-@media screen and (max-width: 310px ) { 
-.hero-content {
-  margin-top: 50%;
+@media screen and (max-width: 310px) {
+  .hero-content {
+    margin-top: 50%;
   }
 }
-
