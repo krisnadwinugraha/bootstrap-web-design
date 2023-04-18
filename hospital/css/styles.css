@@ -10,7 +10,7 @@ body {
 
 nav {
   background-color: transparent;
-  font-weight: bolder;  
+  font-weight: bolder;
 }
 
 .hero::before {
@@ -19,7 +19,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;   
+  height: 100%;
   background: url("../img/medicine.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,8 +35,8 @@ nav {
 .hero-content {
   position: relative;
   margin-top: 15%;
-  padding : 2em;
-  margin-left: 5%;   
+  padding: 2em;
+  margin-left: 5%;
 }
 
 .hero-content h1 {
@@ -47,7 +47,7 @@ nav {
   line-height: 44px;
 }
 
-.hero-content p{
+.hero-content p {
   color: #555555;
   font-family: arial;
   font-size: 18px;
@@ -68,7 +68,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;   
+  height: 100%;
   background: url("../img/cardiac.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -76,29 +76,30 @@ nav {
 }
 
 .benefit {
-  margin-top : 5%;
-  top:0;
+  margin-top: 5%;
+  top: 0;
   position: relative;
   background-color: #ffffff;
   width: 100%;
   height: 100vh;
 }
-  
-.benefit-content{
+
+.benefit-content {
+  margin: 0;
   position: relative;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 5%;
+  top: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-.benefit-content .container-fluid{
+.benefit-content .container-fluid {
   background-color: #ffffff;
   position: relative;
   border-radius: 1em;
 }
 
-.benefit-content img{
-  border : 2px;
+.benefit-content img {
+  border: 2px;
   border-style: solid;
   border-radius: 2em;
 }
@@ -120,20 +121,20 @@ nav {
 }
 
 .feature {
-  margin-top : 5%;
+  margin-top: 5%;
   margin-left: 5%;
   margin-right: 5%;
-  top:0;    
+  top: 0;
   position: relative;
   background-color: #ffffff;
   width: 90%;
+  height: 100vh;
 }
 
-.feature-content{
+.feature-content {
+  margin: 0;
   position: relative;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 5%;
+  top: 50%;
 }
 
 .feature-content h2 {
@@ -144,7 +145,7 @@ nav {
   line-height: 44px;
 }
 
-.feature-content p{
+.feature-content p {
   color: #555555;
   font-family: arial;
   font-size: 18px;
@@ -157,7 +158,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;   
+  height: 100%;
   background: url("../img/digitization.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -167,16 +168,22 @@ nav {
 
 .doctor {
   background-color: rgb(233, 233, 233);
-  margin-top: 20%;  
+  margin-top: 20%;
   position: relative;
   width: 100%;
   height: 100vh;
-  align-items: center;  
+  align-items: center;
 }
 
 .doctor-content {
   position: relative;
-  padding : 2em;    
+  padding: 8em;
+}
+
+.doctor-content .card-img-top {
+  width: 100%;
+  height: 25vw;
+  object-fit: cover;
 }
 
 .footer {
@@ -206,7 +213,7 @@ nav {
   font-weight: bold;
   line-height: 29px;
 }
-  
+
 .footer-content p {
   color: #e6e3e3;
   font-family: arial;
@@ -214,7 +221,7 @@ nav {
   line-height: 18px;
   max-width: 55ch;
 }
-  
+
 .footer-content a {
   color: #e6e3e3;
   font-family: arial;
@@ -227,15 +234,14 @@ text {
   font-size: 16px;
 }
 
-@media screen and (max-height: 450px ) { 
+@media screen and (max-height: 450px) {
   .hero-content {
     margin-top: 2%;
   }
 }
 
-@media screen and (max-height: 310px ) { 
+@media screen and (max-height: 310px) {
   .hero-content {
-   display: none;
-  }  
+    display: none;
+  }
 }
-
